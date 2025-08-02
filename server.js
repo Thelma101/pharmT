@@ -11,3 +11,6 @@ const MONGO_URI = process.env.MONGO_URI;
 mongoose.connect(MONGO_URI).then(() => {
     console.log('MongoDB connected');
 }). catch(error => console.error);
+
+
+const app = express();
